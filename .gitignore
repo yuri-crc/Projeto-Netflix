@@ -1,0 +1,87 @@
+# ===============================
+# GERAL
+# ===============================
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# ===============================
+# PYTHON / VENV
+# ===============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg
+*.egg-info/
+.venv/
+env/
+venv/
+ENV/
+*.ipynb_checkpoints
+
+# ===============================
+# SPARK / DATA LAKE
+# ===============================
+spark-warehouse/
+spark/work/
+spark/checkpoint/
+.metastore_db/
+.derby/
+# Arquivos temporários criados pelo Spark
+.tmp/
+.temp/
+# Cache interno de jobs Spark
+.sparkStaging/
+# Dados intermediários
+*.parquet
+*.orc
+*.avro
+*.csv
+*.json
+
+# ===============================
+# NOTEBOOKS E OUTPUTS
+# ===============================
+.ipynb_checkpoints/
+outputs/
+data/
+logs/
+temp/
+
+# ===============================
+# JAVA / SCALA LIBS (EVITAR .JAR GRANDES)
+# ===============================
+*.jar
+*.class
+*.iml
+target/
+lib/
+
+# ===============================
+# DOCKER
+# ===============================
+.dockerignore
+Dockerfile~
+*.pid
+*.seed
+docker-compose.override.yml
+docker-data/
+volumes/
+
+# ===============================
+# IDEs / EDITORES
+# ===============================
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# ===============================
+# SISTEMAS / WINDOWS
+# ===============================
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
